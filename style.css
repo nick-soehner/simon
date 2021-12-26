@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -12,7 +12,7 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, #212F3D, #1C2833);
+    background: linear-gradient(90deg, #212f3d, #1c2833);
 }
 
 .outer-circle {
@@ -150,7 +150,6 @@ button:hover {
     background-color: red;
 }
 
-
 @media only screen and (max-width: 1000px) {
     .outer-circle {
         transform: scale(1);
@@ -159,7 +158,37 @@ button:hover {
 
 @media only screen and (max-width: 500px) {
     .outer-circle {
-        transform: scale(.5);
+        height: 300px;
+        width: 300px;
+    }
+    .cross {
+        height: 300px;
+    }
+
+    .cross2 {
+        width: 300px;
+    }
+
+    .inner-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .scorebox {
+        width: 25px;
+        height: 25px;
+    }
+
+    .wrapper {
+        width: 100px;
+    }
+
+    .tile {
+        width: 140px;
+        height: 140px;
     }
 }
-
