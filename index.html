@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <audio id="clip1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+        </source>
+    </audio>
+    <audio id="clip2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+        </source>
+    </audio>
+    <audio id="clip3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+        </source>
+    </audio>
+    <audio id="clip4">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+        </source>
+    </audio>
+</head>
+
+<body>
+    <div class="container">
+        <div class="outer-circle">
+            <div class="red" id="red">
+            </div>
+            <div class="green" id="green">
+            </div>
+            <div class="blue" id="blue">
+            </div>
+            <div class="yellow" id="yellow">
+            </div>
+            <div class='cross'>
+            </div>
+            <div class='cross2'>
+            </div>
+            <div class='inner-circle'>
+                <h1>SIMON</h1>
+                <div class="wrapper">
+                    <div class="scorebox">
+                        <h3 class="score" id="score"></h3>
+                    </div>
+                    <button class="off" id="start"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #212F3D, #1C2833);
+}
+
+.outer-circle {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(1.5);
+    box-shadow: 5px 5px 20px black;
+}
+
+.red:hover {
+    cursor: pointer;
+}
+
+.red {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    height: 230px;
+    width: 230px;
+    background-color: red;
+    border-radius: 0 100% 0 0;
+}
+
+.green:hover {
+    cursor: pointer;
+}
+
+.green {
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    height: 230px;
+    width: 230px;
+    background-color: green;
+    border-radius: 100% 0 0 0;
+}
+
+.blue:hover {
+    cursor: pointer;
+}
+
+.blue {
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    background-color: blue;
+    right: 4%;
+    bottom: 4%;
+    border-radius: 0 0 100% 0;
+}
+
+.yellow:hover {
+    cursor: pointer;
+}
+
+.yellow {
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    background-color: yellow;
+    bottom: 4%;
+    left: 4%;
+    border-radius: 0 0 0 100%;
+}
+
+.cross {
+    position: absolute;
+    height: 500px;
+    width: 20px;
+    background-color: black;
+    right: 48%;
+}
+
+.cross2 {
+    position: absolute;
+    height: 20px;
+    width: 500px;
+    background-color: black;
+    top: 48%;
+}
+
+.inner-circle {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+}
+
+.wrapper {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scorebox {
+    width: 50px;
+    height: 50px;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score {
+    color: red;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 1px 1px 5px #424242;
+}
+
+button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+button:hover {
+    cursor: pointer;
+}
+
+#start {
+    background-color: red;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .outer-circle {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .outer-circle {
+        transform: scale(.5);
+    }
+}
+
